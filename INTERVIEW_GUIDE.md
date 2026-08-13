@@ -16,13 +16,14 @@
 pytest -q
 ```
 
-不要只说“22 个测试通过”。解释测试覆盖五条不变量：
+不要只报测试数量。解释测试覆盖六条不变量：
 
 1. 非法输入不进入机器人；
 2. 输出速度始终有限；
 3. Mock Robot 永远不突破关节范围；
 4. 每个实际状态的完整运动链都在 workspace 内；
 5. 过滤器失败时执行零速度，而不是原始 VLA 动作。
+6. 即使过滤器错误放行危险命令，下发前独立复核也会将它改为零速度。
 
 ## 1:20–2:10｜50 点闭环
 
@@ -49,9 +50,10 @@ pytest -q
 
 ## 3:10–4:10｜安全过滤
 
-指着 `safety_filter.py`：先尝试 100% 名义速度，然后 75%、50%、25%、0%。每个
-候选命令在 0.05 秒控制周期内取 10 个子步，逐个做关节限制、FK 和全身检查，选择
-最大的安全比例。
+指着 `safety_filter.py`：先尝试 100% 名义速度，然后 75%、50%、25%、0%。找到
+相邻的安全/不安全档位后，再做 10 轮二分细化。每个候选命令在 0.05 秒控制周期内
+取 10 个子步，逐个做关节限制、FK 和全身检查。二分只减少不必要的修改，不改变
+安全判据；所有判断仍使用配置的安全裕量。
 
 工程取舍：它不是全局规划器，只沿原方向减少动作；优点是确定、保守、可解释、
 无外部 solver，失败路径容易测试。持续停止时应反馈给上层重新规划。
@@ -60,7 +62,10 @@ pytest -q
 
 ```bash
 python -m safe_motion.replay scenarios/real_03_tcp_safe_mid_link_unsafe.json \
-  --output artifacts/real_03_replay.json --plot artifacts/real_03.png
+  --output artifacts/real_03_replay.json \
+  --plot artifacts/real_03.png \
+  --margin-plot artifacts/real_03_margins.png \
+  --explain 46
 ```
 
 官方参考数据中第一帧不安全发生在 step 46。最终名义状态中：
@@ -73,6 +78,10 @@ python -m safe_motion.replay scenarios/real_03_tcp_safe_mid_link_unsafe.json \
 打开 `artifacts/real_03.png`：红色虚线机械臂是名义危险姿态，蓝色是实际安全姿态，
 黄色点是第一次干预。
 
+再打开 margin 图：红线表示未过滤 VLA 的 full-body margin，跌破零说明原轨迹
+越界；绿线表示实际执行状态，始终保持非负。它比只展示最终机械臂姿态更直接地
+说明 SafeMotion 在哪一步介入，以及安全不变量是否持续成立。
+
 ## 5:30–6:20｜解释一次干预
 
 从 `artifacts/real_03_replay.json` 选 step 46，顺序讲：
@@ -84,7 +93,9 @@ q_before
 → 速度裁剪后的 q_dot_nominal
 → 子步 FK 发现中间节点越过 x_min
 → 逐级缩放
+→ 在安全/不安全档位间二分细化
 → q_dot_safe（或零速度）
+→ 下发前独立复核
 → Mock Robot 更新
 → 执行后再次验证
 ```
@@ -101,6 +112,10 @@ q_before
 
 **为什么不用 QP/CBF？** 题目允许缩放方案。两天原型首先保证正确、可测、可解释；
 接口可在未来替换为 QP，但不能让复杂 solver 掩盖 fail-safe。
+
+**二分后很靠近边界，是否危险？** 二分针对的是已经按 `safety_margin` 缩小后的
+workspace，而不是物理边界；最终命令还会独立复核。这里的 `0.1 mm` 只是 Mock
+Robot 演示参数，真机需要按标定、跟踪误差和制动距离显著增大。
 
 **0% 为什么有意义？** 它验证保持当前安全状态是否安全，并明确产生零速度。若当前
 状态一开始就不安全，Replay 直接拒绝，因为停住并不能恢复一个已经越界的机器人。
