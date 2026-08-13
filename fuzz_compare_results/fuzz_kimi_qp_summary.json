@@ -1,0 +1,16 @@
+{
+  "target": "kimi",
+  "seed": 289838560,
+  "total": 100,
+  "pass": 88,
+  "fail": 0,
+  "rejected": 12,
+  "crash": 0,
+  "safety_pass_rate": 0.88,
+  "mean_joint_dev": 0.01034,
+  "mean_tcp_dev": 0.00501,
+  "mean_modified_steps": 3.05,
+  "mean_stopped_steps": 0.0,
+  "violation_rows": [],
+  "crash_rows": []
+}

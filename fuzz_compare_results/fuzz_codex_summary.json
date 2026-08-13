@@ -1,0 +1,16 @@
+{
+  "target": "codex",
+  "seed": 289838560,
+  "total": 100,
+  "pass": 88,
+  "fail": 0,
+  "rejected": 12,
+  "crash": 0,
+  "safety_pass_rate": 0.88,
+  "mean_joint_dev": 0.02851,
+  "mean_tcp_dev": 0.0079,
+  "mean_modified_steps": 2.98,
+  "mean_stopped_steps": 2.61,
+  "violation_rows": [],
+  "crash_rows": []
+}

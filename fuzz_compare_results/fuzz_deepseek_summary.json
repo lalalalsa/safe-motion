@@ -1,0 +1,20 @@
+{
+  "target": "deepseek",
+  "seed": 289838560,
+  "total": 100,
+  "pass": 92,
+  "fail": 0,
+  "rejected": 7,
+  "crash": 1,
+  "safety_pass_rate": 0.92,
+  "mean_joint_dev": 0.06459,
+  "mean_tcp_dev": 0.01344,
+  "mean_modified_steps": 0.51,
+  "mean_stopped_steps": 2.83,
+  "violation_rows": [
+    93
+  ],
+  "crash_rows": [
+    93
+  ]
+}

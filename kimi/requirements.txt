@@ -1,0 +1,4 @@
+numpy>=1.24
+matplotlib>=3.7
+pytest>=7.4
+scipy>=1.10  # 仅 --method qp（加分项）需要
