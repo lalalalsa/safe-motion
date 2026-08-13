@@ -21,7 +21,9 @@ python -m safe_motion.replay scenarios/free_space.json \
 
 python -m safe_motion.replay scenarios/real_03_tcp_safe_mid_link_unsafe.json \
   --output artifacts/real_03_replay.json \
-  --plot artifacts/real_03.png
+  --plot artifacts/real_03.png \
+  --margin-plot artifacts/real_03_margins.png \
+  --explain 46
 ```
 
 ## 一条轨迹是怎样执行的
@@ -34,8 +36,10 @@ python -m safe_motion.replay scenarios/real_03_tcp_safe_mid_link_unsafe.json \
 3. 依次测试名义速度的 100%、75%、50%、25% 和 0%；
 4. 每个候选命令在一个控制周期内采样 10 个子步；
 5. 每个子步检查关节限制和完整机械臂的 workspace 约束；
-6. 执行最大的安全比例，并在执行后再次检查安全不变量；
-7. 下一目标继续基于 Mock Robot 的实际状态，而非假设上一目标已到达。
+6. 在相邻的安全/不安全档位之间二分细化，减少对原动作的修改；
+7. 在机器人接口前独立复核最终命令，不安全则改发零速度；
+8. 执行后再次检查安全不变量；
+9. 下一目标继续基于 Mock Robot 的实际状态，而非假设上一目标已到达。
 
 因此，安全轨迹基本不被修改；不安全轨迹会减速或停在边界内。当前缩放器只沿
 原动作方向寻找安全命令，不负责绕行或全局重规划。
@@ -68,9 +72,10 @@ Mock Robot 构造前一次性拒绝：
 安全配置本身也在同一入口验证，包括 workspace 上下界、关节范围、正的有限速度
 上限、非负安全裕量、至少一个路径子步，以及从 100% 降到 0% 的合法缩放序列。
 
-安全过滤器无解、抛出异常、返回错误 shape 或非有限速度时，Replay 只发送六维零
-速度，并记录停止原因，绝不会回退执行原 VLA 动作。Mock Robot 更新后如果再次检查
-发现不安全，Replay 立即中止并报告安全不变量已破坏。
+安全过滤器无解、抛出异常、返回错误 shape、非有限速度、超速或看似合法但实际
+不安全的速度时，Replay 只发送六维零速度，并记录停止原因，绝不会回退执行原
+VLA 动作。这个独立复核发生在 `MockRobot.step()` 之前；更新后的检查是第二次
+不变量审计，若发现异常则立即中止。
 
 ## 输出与测试
 
@@ -79,13 +84,19 @@ Replay 输出题目要求的：
 - `total_steps`、`executed_steps`；
 - `modified_steps`、`stopped_steps`；
 - `minimum_workspace_margin`；
+- `nominal_minimum_workspace_margin`；
 - `maximum_joint_velocity`；
 - `final_joint_state`；
 - 名义/实际关节轨迹和逐步安全决策日志。
 
+逐步日志还会保存网格回溯与二分的全部候选结果。CLI 的 `--explain STEP` 可打印某
+一步从名义速度到安全速度的完整证据链；`--margin-plot` 输出未过滤 VLA 与实际执行
+轨迹的 full-body margin 对比图。
+
 测试覆盖输入错误、FK 参考值、Mock Robot 数学模型、TCP 安全但中间连杆不安全、
-随机有限命令、安全过滤器故障注入、free-space 不修改，以及题目仓库提供的三个
-真实边界场景。测试断言的是 Mock Robot **实际执行状态**，而不是求解器状态。
+随机有限命令、二分仍保持安全、安全过滤器崩溃/非法输出/错误放行三类故障注入、
+free-space 不修改，以及题目仓库提供的三个真实边界场景。测试断言的是 Mock Robot
+**实际执行状态**，而不是求解器状态。
 
 ## 能保证什么，不能保证什么
 

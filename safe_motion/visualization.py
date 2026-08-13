@@ -66,3 +66,34 @@ def plot_replay(result: ReplayResult, config: SafetyConfig, path: str | Path) ->
     destination.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(destination, dpi=180)
     plt.close(fig)
+
+
+def plot_workspace_margins(result: ReplayResult, path: str | Path) -> None:
+    """Plot nominal danger against the margin of states actually executed."""
+    nominal = np.asarray(result.nominal_workspace_margins, dtype=float)
+    # Drop the initial state so both series align at target/control-step indices
+    # 0..49. The full 51-state history remains available in ReplayResult.
+    executed = np.asarray(result.executed_workspace_margins[1:], dtype=float)
+
+    fig, ax = plt.subplots(figsize=(9, 4.5))
+    ax.axhline(0.0, color="black", linestyle="--", linewidth=1,
+               label="Configured safety boundary")
+    nominal_steps = np.arange(len(nominal))
+    executed_steps = np.arange(len(executed))
+    ax.plot(nominal_steps, nominal, "o-", color="tab:red", markersize=3,
+            linewidth=1.4, label="VLA nominal full-body margin")
+    ax.plot(executed_steps, executed, "o-", color="tab:green", markersize=3,
+            linewidth=1.8, label="SafeMotion executed margin")
+    ax.fill_between(nominal_steps, nominal, 0.0, where=nominal < 0.0,
+                    color="tab:red", alpha=0.15)
+    ax.set_xlabel("control step")
+    ax.set_ylabel("minimum full-body margin [m]")
+    ax.set_title("Full-body workspace margin: nominal vs executed")
+    ax.grid(alpha=0.3)
+    ax.legend(loc="best")
+    fig.tight_layout()
+
+    destination = Path(path)
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    fig.savefig(destination, dpi=180)
+    plt.close(fig)

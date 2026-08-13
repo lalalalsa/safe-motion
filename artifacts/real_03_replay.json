@@ -3,15 +3,16 @@
   "executed_steps": 50,
   "modified_steps": 4,
   "stopped_steps": 3,
-  "minimum_workspace_margin": 0.00526617687321318,
+  "minimum_workspace_margin": 1.6840857934852238e-06,
+  "nominal_minimum_workspace_margin": -0.06108336283158655,
   "maximum_joint_velocity": 0.7729248124725974,
   "final_joint_state": [
-    0.17733066422598698,
-    -0.2724845363927558,
-    -0.44175483044596975,
-    -2.6005802109075264,
-    1.5343723893165588,
-    0.09263543784618378
+    0.17000759414240374,
+    -0.26670235609805726,
+    -0.43269421110047424,
+    -2.6080898905622347,
+    1.5343493487744126,
+    0.09267275024831179
   ],
   "nominal_joint_trajectory": [
     [
@@ -793,37 +794,142 @@
       0.09255754202604294
     ],
     [
-      0.17733066422598698,
-      -0.2724845363927558,
-      -0.44175483044596975,
-      -2.6005802109075264,
-      1.5343723893165588,
-      0.09263543784618378
+      0.17000759414240374,
+      -0.26670235609805726,
+      -0.43269421110047424,
+      -2.6080898905622347,
+      1.5343493487744126,
+      0.09267275024831179
     ],
     [
-      0.17733066422598698,
-      -0.2724845363927558,
-      -0.44175483044596975,
-      -2.6005802109075264,
-      1.5343723893165588,
-      0.09263543784618378
+      0.17000759414240374,
+      -0.26670235609805726,
+      -0.43269421110047424,
+      -2.6080898905622347,
+      1.5343493487744126,
+      0.09267275024831179
     ],
     [
-      0.17733066422598698,
-      -0.2724845363927558,
-      -0.44175483044596975,
-      -2.6005802109075264,
-      1.5343723893165588,
-      0.09263543784618378
+      0.17000759414240374,
+      -0.26670235609805726,
+      -0.43269421110047424,
+      -2.6080898905622347,
+      1.5343493487744126,
+      0.09267275024831179
     ],
     [
-      0.17733066422598698,
-      -0.2724845363927558,
-      -0.44175483044596975,
-      -2.6005802109075264,
-      1.5343723893165588,
-      0.09263543784618378
+      0.17000759414240374,
+      -0.26670235609805726,
+      -0.43269421110047424,
+      -2.6080898905622347,
+      1.5343493487744126,
+      0.09267275024831179
     ]
+  ],
+  "nominal_workspace_margins": [
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.01658777122042754,
+    -0.00560468500154232,
+    -0.026305395110731045,
+    -0.04493611030168898,
+    -0.06108336283158655
+  ],
+  "executed_workspace_margins": [
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.039058999999999996,
+    0.01658777122042754,
+    1.6840857934852238e-06,
+    1.6840857934852238e-06,
+    1.6840857934852238e-06,
+    1.6840857934852238e-06
   ],
   "records": [
     {
@@ -864,6 +970,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         1.5709483623504639,
@@ -912,6 +1028,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         1.5402287098826195,
@@ -960,6 +1086,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         1.509675950420146,
@@ -1008,6 +1144,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         1.4790517845932318,
@@ -1056,6 +1202,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         1.4484278571848967,
@@ -1104,6 +1260,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         1.4178272947973134,
@@ -1152,6 +1318,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         1.387155445254579,
@@ -1200,6 +1376,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         1.3565312794276647,
@@ -1248,6 +1434,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         1.3258950734625057,
@@ -1296,6 +1492,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         1.2952828285645466,
@@ -1344,6 +1550,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         1.2645987004649881,
@@ -1392,6 +1608,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         1.2340223375631838,
@@ -1440,6 +1666,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         1.203386131598025,
@@ -1488,6 +1724,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         1.1726780424312668,
@@ -1536,6 +1782,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         1.1420777184622628,
@@ -1584,6 +1840,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         1.1114894346315034,
@@ -1632,6 +1898,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         1.080877189733544,
@@ -1680,6 +1956,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         1.0502290628394302,
@@ -1728,6 +2014,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         1.0196047778032264,
@@ -1776,6 +2072,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         0.9889206497036681,
@@ -1824,6 +2130,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         0.9583084048057089,
@@ -1872,6 +2188,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         0.9276482377733504,
@@ -1920,6 +2246,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         0.8970839150097906,
@@ -1968,6 +2304,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         0.8664237479774319,
@@ -2016,6 +2362,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         0.8357994629412282,
@@ -2064,6 +2420,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         0.8051992581815135,
@@ -2112,6 +2478,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         0.7745630522163547,
@@ -2160,6 +2536,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         0.743938767180151,
@@ -2208,6 +2594,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         0.713302561214992,
@@ -2256,6 +2652,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         0.6826663552498331,
@@ -2304,6 +2710,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         0.6520301492846742,
@@ -2352,6 +2768,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         0.6213820223905602,
@@ -2400,6 +2826,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         0.5908176996270005,
@@ -2448,6 +2884,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         0.5601454924563973,
@@ -2496,6 +2942,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         0.5295572086256377,
@@ -2544,6 +3000,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         0.4989330427987235,
@@ -2592,6 +3058,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         0.4682968368335645,
@@ -2640,6 +3116,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         0.43769651286456046,
@@ -2688,6 +3174,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         0.407048266761157,
@@ -2736,6 +3232,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         0.3763761787998434,
@@ -2784,6 +3290,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         0.3457878949690838,
@@ -2832,6 +3348,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         0.3151996111383242,
@@ -2880,6 +3406,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         0.28452740396772125,
@@ -2928,6 +3464,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         0.25390323814080684,
@@ -2976,6 +3522,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.039058999999999996,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.039058999999999996,
       "q_after": [
         0.22329099324284774,
@@ -3024,6 +3580,16 @@
       "modified": false,
       "stopped": false,
       "reason": "safe",
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.01658777122042754,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
       "minimum_margin": 0.01658777122042754,
       "q_after": [
         0.19261878607224436,
@@ -3061,25 +3627,131 @@
         0.003115832805633545
       ],
       "q_dot_safe": [
-        -0.3057624369251477,
-        0.24142518335459107,
-        0.37831087501681626,
-        -0.3135540047470453,
-        -0.0009620189666748047,
-        0.0015579164028167725
+        -0.4522238385968127,
+        0.35706878924856267,
+        0.5595232619267267,
+        -0.46374759784121106,
+        -0.0014228298095986247,
+        0.002304164445376955
       ],
-      "scale": 0.5,
+      "scale": 0.739501953125,
       "modified": true,
       "stopped": false,
       "reason": "scaled_for_safety",
-      "minimum_margin": 0.00526617687321318,
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": false,
+          "reason": "node_or_link_outside_workspace",
+          "minimum_margin": -0.0013115350953941673,
+          "offending_node": 2,
+          "stage": "grid"
+        },
+        {
+          "scale": 0.75,
+          "safe": false,
+          "reason": "node_or_link_outside_workspace",
+          "minimum_margin": -0.00022667770402184928,
+          "offending_node": 2,
+          "stage": "grid"
+        },
+        {
+          "scale": 0.5,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.00526617687321318,
+          "offending_node": null,
+          "stage": "grid"
+        },
+        {
+          "scale": 0.625,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.0025055272563905273,
+          "offending_node": null,
+          "stage": "bisection"
+        },
+        {
+          "scale": 0.6875,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.0011358523901050521,
+          "offending_node": null,
+          "stage": "bisection"
+        },
+        {
+          "scale": 0.71875,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.0004536921552701356,
+          "offending_node": null,
+          "stage": "bisection"
+        },
+        {
+          "scale": 0.734375,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 0.00011328316785563786,
+          "offending_node": null,
+          "stage": "bisection"
+        },
+        {
+          "scale": 0.7421875,
+          "safe": false,
+          "reason": "node_or_link_outside_workspace",
+          "minimum_margin": -5.675331509202852e-05,
+          "offending_node": 2,
+          "stage": "bisection"
+        },
+        {
+          "scale": 0.73828125,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 2.825091869884666e-05,
+          "offending_node": null,
+          "stage": "bisection"
+        },
+        {
+          "scale": 0.740234375,
+          "safe": false,
+          "reason": "node_or_link_outside_workspace",
+          "minimum_margin": -1.4254700626104011e-05,
+          "offending_node": 2,
+          "stage": "bisection"
+        },
+        {
+          "scale": 0.7392578125,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 6.997233492622712e-06,
+          "offending_node": null,
+          "stage": "bisection"
+        },
+        {
+          "scale": 0.73974609375,
+          "safe": false,
+          "reason": "node_or_link_outside_workspace",
+          "minimum_margin": -3.628952460643653e-06,
+          "offending_node": 2,
+          "stage": "bisection"
+        },
+        {
+          "scale": 0.739501953125,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 1.6840857934852238e-06,
+          "offending_node": null,
+          "stage": "bisection"
+        }
+      ],
+      "minimum_margin": 1.6840857934852238e-06,
       "q_after": [
-        0.17733066422598698,
-        -0.2724845363927558,
-        -0.44175483044596975,
-        -2.6005802109075264,
-        1.5343723893165588,
-        0.09263543784618378
+        0.17000759414240374,
+        -0.26670235609805726,
+        -0.43269421110047424,
+        -2.6080898905622347,
+        1.5343493487744126,
+        0.09267275024831179
       ]
     },
     {
@@ -3093,20 +3765,20 @@
         0.09267738461494446
       ],
       "q_before": [
-        0.17733066422598698,
-        -0.2724845363927558,
-        -0.44175483044596975,
-        -2.6005802109075264,
-        1.5343723893165588,
-        0.09263543784618378
+        0.17000759414240374,
+        -0.26670235609805726,
+        -0.43269421110047424,
+        -2.6080898905622347,
+        1.5343493487744126,
+        0.09267275024831179
       ],
       "q_dot_nominal": [
-        -0.918486556228324,
-        0.7410602180325232,
-        1.1438208696793506,
-        -0.9687000391434619,
-        -0.002161264419555664,
-        0.000838935375213623
+        -0.7720251545566592,
+        0.6254166121385518,
+        0.9626084827694403,
+        -0.8185064460492963,
+        -0.001700453576631844,
+        9.268733265344054e-05
       ],
       "q_dot_safe": [
         -0.0,
@@ -3120,14 +3792,56 @@
       "modified": true,
       "stopped": true,
       "reason": "stopped",
-      "minimum_margin": 0.00526617687321318,
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": false,
+          "reason": "node_or_link_outside_workspace",
+          "minimum_margin": -0.002768372903955263,
+          "offending_node": 2,
+          "stage": "grid"
+        },
+        {
+          "scale": 0.75,
+          "safe": false,
+          "reason": "node_or_link_outside_workspace",
+          "minimum_margin": -0.0020786823676812727,
+          "offending_node": 2,
+          "stage": "grid"
+        },
+        {
+          "scale": 0.5,
+          "safe": false,
+          "reason": "node_or_link_outside_workspace",
+          "minimum_margin": -0.0013871064208763606,
+          "offending_node": 2,
+          "stage": "grid"
+        },
+        {
+          "scale": 0.25,
+          "safe": false,
+          "reason": "node_or_link_outside_workspace",
+          "minimum_margin": -0.0006936494652658443,
+          "offending_node": 2,
+          "stage": "grid"
+        },
+        {
+          "scale": 0.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 1.6840857934852238e-06,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
+      "minimum_margin": 1.6840857934852238e-06,
       "q_after": [
-        0.17733066422598698,
-        -0.2724845363927558,
-        -0.44175483044596975,
-        -2.6005802109075264,
-        1.5343723893165588,
-        0.09263543784618378
+        0.17000759414240374,
+        -0.26670235609805726,
+        -0.43269421110047424,
+        -2.6080898905622347,
+        1.5343493487744126,
+        0.09267275024831179
       ]
     },
     {
@@ -3141,20 +3855,20 @@
         0.09278523921966553
       ],
       "q_before": [
-        0.17733066422598698,
-        -0.2724845363927558,
-        -0.44175483044596975,
-        -2.6005802109075264,
-        1.5343723893165588,
-        0.09263543784618378
+        0.17000759414240374,
+        -0.26670235609805726,
+        -0.43269421110047424,
+        -2.6080898905622347,
+        1.5343493487744126,
+        0.09267275024831179
       ],
       "q_dot_nominal": [
-        -1.5,
-        1.2406857159672913,
+        -1.3840316339367398,
+        1.12504211007332,
         1.5,
-        -1.5,
-        -0.002161264419555664,
-        0.0029960274696350098
+        -1.469084380470136,
+        -0.001700453576631844,
+        0.0022497794270748273
       ],
       "q_dot_safe": [
         -0.0,
@@ -3168,14 +3882,56 @@
       "modified": true,
       "stopped": true,
       "reason": "stopped",
-      "minimum_margin": 0.00526617687321318,
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": false,
+          "reason": "node_or_link_outside_workspace",
+          "minimum_margin": -0.004673012284117872,
+          "offending_node": 2,
+          "stage": "grid"
+        },
+        {
+          "scale": 0.75,
+          "safe": false,
+          "reason": "node_or_link_outside_workspace",
+          "minimum_margin": -0.00351266757228319,
+          "offending_node": 2,
+          "stage": "grid"
+        },
+        {
+          "scale": 0.5,
+          "safe": false,
+          "reason": "node_or_link_outside_workspace",
+          "minimum_margin": -0.0023467554246010547,
+          "offending_node": 2,
+          "stage": "grid"
+        },
+        {
+          "scale": 0.25,
+          "safe": false,
+          "reason": "node_or_link_outside_workspace",
+          "minimum_margin": -0.0011752975890919615,
+          "offending_node": 2,
+          "stage": "grid"
+        },
+        {
+          "scale": 0.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 1.6840857934852238e-06,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
+      "minimum_margin": 1.6840857934852238e-06,
       "q_after": [
-        0.17733066422598698,
-        -0.2724845363927558,
-        -0.44175483044596975,
-        -2.6005802109075264,
-        1.5343723893165588,
-        0.09263543784618378
+        0.17000759414240374,
+        -0.26670235609805726,
+        -0.43269421110047424,
+        -2.6080898905622347,
+        1.5343493487744126,
+        0.09267275024831179
       ]
     },
     {
@@ -3189,20 +3945,20 @@
         0.09276127070188522
       ],
       "q_before": [
-        0.17733066422598698,
-        -0.2724845363927558,
-        -0.44175483044596975,
-        -2.6005802109075264,
-        1.5343723893165588,
-        0.09263543784618378
+        0.17000759414240374,
+        -0.26670235609805726,
+        -0.43269421110047424,
+        -2.6080898905622347,
+        1.5343493487744126,
+        0.09267275024831179
       ],
       "q_dot_nominal": [
         -1.5,
         1.5,
         1.5,
         -1.5,
-        -0.005036592483520508,
-        0.0025166571140289307
+        -0.004575781640596688,
+        0.0017704090714687482
       ],
       "q_dot_safe": [
         -0.0,
@@ -3216,14 +3972,56 @@
       "modified": true,
       "stopped": true,
       "reason": "stopped",
-      "minimum_margin": 0.00526617687321318,
+      "attempts": [
+        {
+          "scale": 1.0,
+          "safe": false,
+          "reason": "node_or_link_outside_workspace",
+          "minimum_margin": -0.0054016808318144705,
+          "offending_node": 2,
+          "stage": "grid"
+        },
+        {
+          "scale": 0.75,
+          "safe": false,
+          "reason": "node_or_link_outside_workspace",
+          "minimum_margin": -0.004061911912747851,
+          "offending_node": 2,
+          "stage": "grid"
+        },
+        {
+          "scale": 0.5,
+          "safe": false,
+          "reason": "node_or_link_outside_workspace",
+          "minimum_margin": -0.0027147403328444675,
+          "offending_node": 2,
+          "stage": "grid"
+        },
+        {
+          "scale": 0.25,
+          "safe": false,
+          "reason": "node_or_link_outside_workspace",
+          "minimum_margin": -0.0013601977308528301,
+          "offending_node": 2,
+          "stage": "grid"
+        },
+        {
+          "scale": 0.0,
+          "safe": true,
+          "reason": "safe",
+          "minimum_margin": 1.6840857934852238e-06,
+          "offending_node": null,
+          "stage": "grid"
+        }
+      ],
+      "minimum_margin": 1.6840857934852238e-06,
       "q_after": [
-        0.17733066422598698,
-        -0.2724845363927558,
-        -0.44175483044596975,
-        -2.6005802109075264,
-        1.5343723893165588,
-        0.09263543784618378
+        0.17000759414240374,
+        -0.26670235609805726,
+        -0.43269421110047424,
+        -2.6080898905622347,
+        1.5343493487744126,
+        0.09267275024831179
       ]
     }
   ]

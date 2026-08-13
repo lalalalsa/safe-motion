@@ -43,6 +43,7 @@ class SafetyConfig:
     safety_margin: float = 1e-4
     path_substeps: int = 10
     velocity_scales: tuple[float, ...] = (1.0, 0.75, 0.5, 0.25, 0.0)
+    bisection_iterations: int = 10
     # The fixed pedestal begins at z=0 while the example keep-in box begins at
     # z=0.05. We therefore check the moving chain from joint_1 onward.
     first_checked_node: int = 1
@@ -62,5 +63,7 @@ class SafetyConfig:
         if "safety_margin" in data:
             kwargs["safety_margin"] = float(data["safety_margin"])
         if "path_substeps" in data:
-            kwargs["path_substeps"] = int(data["path_substeps"])
+            kwargs["path_substeps"] = data["path_substeps"]
+        if "bisection_iterations" in data:
+            kwargs["bisection_iterations"] = data["bisection_iterations"]
         return cls(**kwargs)

@@ -54,6 +54,13 @@ def validate_config(config: SafetyConfig) -> None:
         raise InputValidationError("path_substeps must be an integer")
     if config.path_substeps < 1:
         raise InputValidationError("path_substeps must be at least 1")
+    if (
+        not isinstance(config.bisection_iterations, int)
+        or isinstance(config.bisection_iterations, bool)
+    ):
+        raise InputValidationError("bisection_iterations must be an integer")
+    if config.bisection_iterations < 0:
+        raise InputValidationError("bisection_iterations must be non-negative")
 
     scales = np.asarray(config.velocity_scales, dtype=float)
     if scales.ndim != 1 or scales.size < 2 or not np.all(np.isfinite(scales)):
