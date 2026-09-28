@@ -1,6 +1,5 @@
 # safe-motion — 同一道题的三个独立实现 + 跨实现盲测对比
 
-> 面试作业：[VLA 机械臂安全执行器](https://github.com/gaoyuchen820/Interview-assignment/tree/main/Interview%20questions%20on%20embodied%20AI)。
 > 本仓库用三个相互独立的 AI 编程助手分别实现同一道题，再用同一套
 > 100 组盲测数据横向对比——一次"多实现对拍"的工程实验。
 
